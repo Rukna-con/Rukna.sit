@@ -1,0 +1,198 @@
+
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>رُكنا للمقاولات</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&amp;family=Montserrat:wght@700&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
+<style>
+    body {
+      font-family: 'Cairo', sans-serif;
+      background: #f9f9f9 url('https://www.transparenttextures.com/patterns/geometry.png');
+      background-size: cover;
+      color: #1b3d2f;
+      scroll-behavior: smooth;
+    }
+
+    .navbar {
+      background-color: #1b3d2f;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .navbar-brand img {
+      height: 50px;
+    }
+
+    .nav-link {
+      color: #fff !important;
+    }
+
+    .hero {
+      padding: 100px 0;
+      background: linear-gradient(135deg, #e7e4d9, #f5f5f5);
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      animation: fadeInDown 1s ease-in-out;
+    }
+
+    .btn-main {
+      background-color: #1b3d2f;
+      color: white;
+    }
+
+    .btn-main:hover {
+      background-color: #163024;
+    }
+
+    .box:hover {
+      transform: scale(1.05);
+      transition: 0.3s ease;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    }
+
+    /* زر العودة للأعلى */
+    #back-to-top {
+      position: fixed;
+      bottom: 30px;
+      left: 30px;
+      background-color: #004d40;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 50%;
+      font-size: 20px;
+      text-align: center;
+      text-decoration: none;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      z-index: 9999;
+    }
+
+    #back-to-top:hover {
+      background-color: #00796b;
+    }
+
+    /* زر واتساب */
+    #floating-contact {
+      position: fixed;
+      bottom: 90px;
+      left: 30px;
+      background-color: #25d366;
+      color: white;
+      font-size: 24px;
+      padding: 12px;
+      border-radius: 50%;
+      text-align: center;
+      text-decoration: none;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      z-index: 9999;
+    }
+
+    #floating-contact:hover {
+      background-color: #128c7e;
+    }
+
+    /* شاشة تحميل */
+    #loading-screen {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background-color: #1b3d2f;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 99999;
+      font-size: 2rem;
+      font-weight: bold;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 0.8; }
+  50% { transform: scale(1.1); opacity: 1; }
+  100% { transform: scale(1); opacity: 0.8; }
+}
+</style>
+</head>
+<body>
+<div id="loading-screen">جار التحميل...</div>
+<nav class="navbar navbar-expand-lg navbar-dark">
+<div class="container">
+<a class="navbar-brand" href="#" onmousedown="this.style.transform='scale(0.95)'" onmouseleave="this.style.transform='scale(1)'" onmouseup="this.style.transform='scale(1)'" style="transition: transform 0.2s ease-in-out;"><img alt="Logo" src="logo.png"/></a>
+<button class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+<ul class="navbar-nav">
+<li class="nav-item"><a class="nav-link" href="#" onmousedown="this.style.transform='scale(0.95)'" onmouseleave="this.style.transform='scale(1)'" onmouseup="this.style.transform='scale(1)'" style="transition: transform 0.2s ease-in-out;">الرئيسية</a></li>
+<li class="nav-item"><a class="nav-link" href="#" onmousedown="this.style.transform='scale(0.95)'" onmouseleave="this.style.transform='scale(1)'" onmouseup="this.style.transform='scale(1)'" style="transition: transform 0.2s ease-in-out;">من نحن</a></li>
+<li class="nav-item"><a class="nav-link" href="#" onmousedown="this.style.transform='scale(0.95)'" onmouseleave="this.style.transform='scale(1)'" onmouseup="this.style.transform='scale(1)'" style="transition: transform 0.2s ease-in-out;">خدماتنا</a></li>
+<li class="nav-item"><a class="nav-link" href="#" onmousedown="this.style.transform='scale(0.95)'" onmouseleave="this.style.transform='scale(1)'" onmouseup="this.style.transform='scale(1)'" style="transition: transform 0.2s ease-in-out;">معرض المشاريع</a></li>
+<li class="nav-item"><a class="nav-link" href="#" onmousedown="this.style.transform='scale(0.95)'" onmouseleave="this.style.transform='scale(1)'" onmouseup="this.style.transform='scale(1)'" style="transition: transform 0.2s ease-in-out;">تواصل معنا</a></li>
+</ul>
+<div class="ms-3">
+<a class="nav-link" href="#" onmousedown="this.style.transform='scale(0.95)'" onmouseleave="this.style.transform='scale(1)'" onmouseup="this.style.transform='scale(1)'" style="transition: transform 0.2s ease-in-out;">EN</a>
+</div>
+</div>
+</div>
+</nav>
+<section class="hero">
+<div class="container">
+<h1>مرحباً بكم في رُكنا للمقاولات</h1>
+<p class="lead">نقدّم أفضل حلول الإكساء والبناء بجودة عالية وأناقة مميزة.</p>
+<a class="btn btn-main mt-3" href="#">استعرض خدماتنا</a>
+</div>
+</section>
+<!-- روابط التواصل -->
+<a href="#" id="back-to-top" title="العودة للأعلى">↑</a>
+<a href="https://wa.me/963981671040" id="floating-contact" target="_blank" title="تواصل عبر واتساب">💬</a>
+<script>
+  window.addEventListener("load", function () {
+    document.getElementById("loading-screen").style.display = "none";
+  });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<main>
+<section>
+<h2 style="text-align:center;">معرض المشاريع</h2>
+<div style="display:flex; flex-wrap:wrap; gap:20px; justify-content:center;">
+<div onclick="window.location.href='project1.html'" style="cursor:pointer; width:250px; height:200px; background:#ddd; border-radius:10px; box-shadow:0 2px 5px rgba(0,0,0,0.2); background-image:url('https://via.placeholder.com/250'); background-size:cover;"></div>
+<div onclick="window.location.href='project2.html'" style="cursor:pointer; width:250px; height:200px; background:#ccc; border-radius:10px; box-shadow:0 2px 5px rgba(0,0,0,0.2); background-image:url('https://via.placeholder.com/250/cccccc'); background-size:cover;"></div>
+</div>
+</section>
+</main></body>
+</html>

@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>رُكنا</title>
+  <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+      font-family: 'Cairo', sans-serif;
+    }
+    body {
+      background-color: #0e3f2f;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      color: #f5f5dc;
+      overflow: hidden;
+    }
+    .intro {
+      text-align: center;
+      animation: fadeIn 2s ease-in-out;
+    }
+    .intro img {
+      width: 140px;
+      animation: popIn 1.5s ease-in-out;
+    }
+    .intro h1 {
+      margin-top: 20px;
+      font-size: 24px;
+      letter-spacing: 1px;
+    }
+    @keyframes popIn {
+      0% { transform: scale(0); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+  <script>
+    setTimeout(() => {
+      window.location.href = "home.html";
+    }, 3000);
+  </script>
+</head>
+<body>
+  <div class="intro">
+    <img src="logo.png" alt="شعار رُكنا" />
+    <h1>خبراء في إكساء المشاريع السكنية باحترافية وجودة عالية</h1>
+  </div>
+</body>
+</html>
